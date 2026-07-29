@@ -1,0 +1,29 @@
+[Defines]
+  INF_VERSION                     = 0x00010017
+  BASE_NAME                       = RamTunerPei
+  FILE_GUID                       = 1A2B3C4D-5E6F-7081-8293-A4B5C6D7E8F9
+  MODULE_TYPE                     = PEIM
+  VERSION_STRING                  = 1.0
+  ENTRY_POINT                     = RamTunerPeiEntry
+
+[Sources]
+  RamTunerPei.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  RamTunerPkg/RamTunerPkg.dec
+
+[LibraryClasses]
+  PeimEntryPoint
+  BaseLib
+  DebugLib
+  PeiServicesLib
+
+[Ppis]
+  gEfiPeiReadOnlyVariable2PpiGuid
+
+[Guids]
+  gEfiGlobalVariableGuid
+
+[Depex]
+  gEfiPeiReadOnlyVariable2PpiGuid

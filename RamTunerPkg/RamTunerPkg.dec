@@ -1,0 +1,4 @@
+[Defines]
+  PACKAGE_NAME                    = RamTunerPkg
+  PACKAGE_GUID                    = 7A4E8E2-7C70-4E97-A5A1-D3CFDA123456
+  PACKAGE_VERSION                 = 0.1
